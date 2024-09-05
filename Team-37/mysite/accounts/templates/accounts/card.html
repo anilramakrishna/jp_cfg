@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+</head>
+
+<body>
+    <h1><a href="{% url 'home' %}">Go Back To Home</a></h1>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="VitaminE">
+            <img class="front-face" src="{% static 'images/greenVeggies.webp' %}" alt="VitaminE">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminE">
+            <img class="front-face" src="{% static 'images/vitaminE.png' %}" alt="VitaminE">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+
+        <div class="memory-card" data-framework="VitaminC">
+            <img class="front-face" src="{% static 'images/tomato.webp' %}" alt="VitaminC">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminC">
+            <img class="front-face" src="{% static 'images/vitaminC.png' %}" alt="VitaminC">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminK">
+            <img class="front-face" src="{% static 'images/spinach.webp' %}" alt="VitaminK">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminK">
+            <img class="front-face" src="{% static 'images/vitaminK.png' %}" alt="VitaminK">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminA">
+            <img class="front-face" src="{% static 'images/papaya.webp' %}" alt="VitaminA">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminA">
+            <img class="front-face" src="{% static 'images/vitaminA.png' %}" alt="VitaminA">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminD">
+            <img class="front-face" src="{% static 'images/orange.webp' %}" alt="VitaminD">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminD">
+            <img class="front-face" src="{% static 'images/vitaminD.png' %}" alt="VitaminD">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminB">
+            <img class="front-face" src="{% static 'images/banana.avif' %}" alt="VitaminB">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="VitaminB">
+            <img class="front-face" src="{% static 'images/vitaminB.png' %}" alt="VitaminB">
+            <img class="back-face" src="{% static 'images/questionMark.png' %}" alt="JS Badge" />
+        </div>
+    </section>
+    <script src="{% static 'js/card.js' %}"></script>
+</body>
+
+</html>

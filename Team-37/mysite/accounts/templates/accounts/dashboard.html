@@ -1,0 +1,40 @@
+{% extends 'accounts/main1.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/dash.css' %}">
+</head>
+
+<body>
+    <h2>Responsive Table</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in user %}
+                <tr>
+                    <td>{{i.username}}</td>
+                    <td>{{i.email}}</td>
+                    <td><button style="background-color: red;"><a style="color:white"
+                                href="{% url 'delete' i.id %}">Delete</a></button></td>
+                </tr>
+                {% endfor %}
+            <tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+{% endblock %}

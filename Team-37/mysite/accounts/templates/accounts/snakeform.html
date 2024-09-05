@@ -1,0 +1,34 @@
+{% extends 'accounts/main1.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <title>Player Input Form</title>
+</head>
+
+<body
+    style="background-image:url(https://images.news18.com/ibnlive/uploads/2021/09/junk-food-16304466874x3.jpg);background-size: cover; background-repeat: no-repeat;">
+    <h1>HealthyHike</h1>
+    <form id="player-form" method="POST">
+        {% csrf_token %}
+        <div class="input-group">
+            <label for="num-players">Number of Players:</label>
+            <input type="number" id="num-players" name="num-players" min="1" required><br>
+        </div>
+        <div id="player-names-container"></div>
+        <button type="submit">Start Game</button>
+        <!-- <input type="submit" name="Submit"> -->
+    </form>
+
+    <script src="{% static 'js/form.js' %}">
+    </script>
+</body>
+
+</html>
+{% endblock %}

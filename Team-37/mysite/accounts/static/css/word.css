@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    margin: 10px;
+    color: #1D5D9B;
+}
+
+.box {
+    border: 1px solid black;
+    background-color: #F4D160;
+}
+
+body {
+    background-color: #1D5D9B;
+}
